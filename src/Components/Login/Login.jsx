@@ -3,13 +3,13 @@ import { useDispatch } from "react-redux";
 import { loginUser } from "../ReduxState/ReduxState";
 
 const Login = () => {
-  const dispatch = useDispatch();
+  const dispatch = useDispatch(); // function useage 👇👇✔✔
 
   return (
     <div>
       <button
         onClick={() => {
-          dispatch(
+          dispatch( // here 👇✔❤❕
             loginUser({
               userName: "favour",
               Age: "10yrs",
