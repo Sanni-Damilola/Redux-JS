@@ -1,9 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+// createing an object / state
 const initialState = {
   current: null,
 };
 
+// creating the reducer state
 const ReduxState = createSlice({
   name: "users",
   initialState,
@@ -11,7 +13,7 @@ const ReduxState = createSlice({
     loginUser: (state, actions) => {
       state.current = actions.payload;
     },
-  },
+  }, // creating function
 });
 
 export const { loginUser } = ReduxState.actions;
