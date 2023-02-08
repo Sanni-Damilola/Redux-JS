@@ -3,8 +3,16 @@ import React from "react";
 const Login = () => {
   return (
     <div>
-      <button>Login</button>
-      <button>LogOut</button>
+      <button
+        style={{ cursor: "pointer", padding: "10px 30px", margin: "10px" }}
+      >
+        Login
+      </button>
+      <button
+        style={{ cursor: "pointer", padding: "10px 30px", margin: "10px" }}
+      >
+        LogOut
+      </button>
     </div>
   );
 };
