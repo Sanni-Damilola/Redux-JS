@@ -7,18 +7,10 @@ const Profile = () => {
   return (
     <div>
       <h1>user</h1>
-      <h3>
-        UserName :<pre>{userData?.userName}</pre>
-      </h3>
-      <h3>
-        Age : <pre>{userData?.Age}</pre>
-      </h3>
-      <h3>
-        Email : <pre>{userData?.Email}</pre>
-      </h3>
-      <h3>
-        Stack : <pre>{userData?.Stack}</pre>
-      </h3>
+      <div>UserName : {userData?.userName} </div>
+      <div>Age : {userData?.Age}</div>
+      <div>Email : {userData?.Email}</div>
+      <div>Stack : {userData?.Stack}</div>
     </div>
   );
 };
