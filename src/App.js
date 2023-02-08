@@ -3,7 +3,7 @@ import Profile from "./Components/Profile/Profile";
 
 function App() {
   return (
-    <center style={{ marginTop: "300px" }}>
+    <center style={{ marginTop: "100px" }}>
       <br />
       <Login />
       <Profile />
