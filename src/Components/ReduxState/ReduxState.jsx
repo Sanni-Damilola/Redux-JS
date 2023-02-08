@@ -14,6 +14,6 @@ const ReduxState = createSlice({
   },
 });
 
-export const {} = ReduxState.actions;
+export const { loginUser } = ReduxState.actions;
 
 export default ReduxState.reducer;
