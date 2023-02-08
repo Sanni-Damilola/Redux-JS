@@ -3,11 +3,11 @@ import React from "react";
 const Profile = () => {
   return (
     <div>
-      <h2>user</h2>
-      <div>UserName : </div>
-      <div>Age : </div>
-      <div>Email :</div>
-      <div>Stack :</div>
+      <h1>user</h1>
+      <h3>UserName : </h3>
+      <h3>Age : </h3>
+      <h3>Email : </h3>
+      <h3>Stack : </h3>
     </div>
   );
 };
