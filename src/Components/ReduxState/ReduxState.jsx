@@ -13,12 +13,14 @@ const ReduxState = createSlice({
     loginUser: (state, actions) => {
       state.current = actions.payload;
     },
+    logOutUser: (state) => {
+      state.current = null;
+    },
   }, // creating function
 });
 
-export const { loginUser } = ReduxState.actions; // exporting functions
+export const { loginUser, logOutUser } = ReduxState.actions; // exporting functions
 
 export default ReduxState.reducer;
-
 
 // 😎😉😊

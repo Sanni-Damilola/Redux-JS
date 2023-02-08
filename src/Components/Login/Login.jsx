@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { loginUser } from "../ReduxState/ReduxState";
+import { loginUser, logOutUser } from "../ReduxState/ReduxState";
 
 const Login = () => {
   const dispatch = useDispatch(); // function useage 👇👇✔✔
@@ -9,7 +9,8 @@ const Login = () => {
     <div>
       <button
         onClick={() => {
-          dispatch( // here 👇✔❤❕
+          dispatch(
+            // here 👇✔❤❕
             loginUser({
               userName: "favour",
               Age: "10yrs",
@@ -17,12 +18,15 @@ const Login = () => {
               Stack: "FullStack",
             })
           ); //  store data
-        }} 
+        }}
         style={{ cursor: "pointer", padding: "10px 30px", margin: "10px" }}
       >
         Login
       </button>
       <button
+        onClick={() => {
+          dispatch(logOutUser());
+        }} // logOut
         style={{ cursor: "pointer", padding: "10px 30px", margin: "10px" }}
       >
         LogOut
