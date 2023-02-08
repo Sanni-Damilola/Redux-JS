@@ -16,8 +16,8 @@ const Login = () => {
               Email: "favour@gmaul.com",
               Stack: "FullStack",
             })
-          );
-        }}
+          ); //  store data
+        }} 
         style={{ cursor: "pointer", padding: "10px 30px", margin: "10px" }}
       >
         Login
