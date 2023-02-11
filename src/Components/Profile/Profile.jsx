@@ -4,10 +4,10 @@ import { logInUser, logOutUser } from "../ReduxState/ReduxState";
 
 const Profile = () => {
   const dispatch = useDispatch();
-  const [name, setName] = useState("");
-  const [age, setAge] = useState("");
-  const [stack, setStack] = useState("");
-  const [email, setEmail] = useState("");
+  const [name, setName] = React.useState("");
+  const [age, setAge] = React.useState("");
+  const [stack, setStack] = React.useState("");
+  const [email, setEmail] = React.useState("");
 
   return (
     <div>
@@ -26,8 +26,7 @@ const Profile = () => {
       >
         login
       </button>
-      <button
-      style={{ margin: "10px", padding: "5px" }}>logout</button>
+      <button style={{ margin: "10px", padding: "5px" }}>logout</button>
     </div>
   );
 };
