@@ -11,6 +11,10 @@ const Profile = () => {
 
   return (
     <div>
+      <input type="email" placeholder="email" /> <br />
+      <input type="text" placeholder="name" /> <br />
+      <input type="stack" placeholder="stack" /> <br />
+      <input type="number" placeholder="age" /> <br />
       <button
         onClick={() => {
           dispatch(
