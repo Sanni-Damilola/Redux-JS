@@ -9,5 +9,8 @@ import { configureStore } from "@reduxjs/toolkit";
 //   },
 // }); // storeing the reducer
 
-
-export
+export const store = configureStore({
+  reducer: {
+    myReducer,
+  },
+});
