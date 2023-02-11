@@ -5,4 +5,4 @@ export const store = configureStore({
   reducer: {
     myReducer,
   },
-});
+}); // storeing the reducer
