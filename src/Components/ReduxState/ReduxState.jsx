@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   current: null,
-}; // createing an 
+}; // createing an initiaState
 
 const reducerState = createSlice({
   name: "users",
@@ -10,11 +10,11 @@ const reducerState = createSlice({
   reducers: {
     logInUser: (state, action) => {
       state.current = action.payload;
-    },
+    }, // function to login
 
     logOutUser: (state, action) => {
       state.current = null;
-    },
+    }, // function to logout
   },
 }); // creating the reducer state
 
