@@ -18,6 +18,6 @@ const reducerState = createSlice({
   },
 }); // creating the reducer state
 
-export const { logInUser, logOutUser } = reducerState.actions;
+export const { logInUser, logOutUser } = reducerState.actions; // export funtions
 
-export default reducerState.reducer;
+export default reducerState.reducer;  // export main reducer
