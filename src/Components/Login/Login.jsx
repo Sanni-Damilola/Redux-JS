@@ -16,7 +16,6 @@ const Login = () => {
         onChange={(e) => {
           setEmail(e.target.value);
         }}
-        minLength={6}
         name=""
         placeholder="email"
       />{" "}
@@ -25,7 +24,6 @@ const Login = () => {
         onChange={(e) => {
           setStack(e.target.value);
         }}
-        minLength={6}
         type="text"
         name=""
         placeholder="stack"
@@ -35,7 +33,6 @@ const Login = () => {
         onChange={(e) => {
           setName(e.target.value);
         }}
-        minLength={6}
         type="text"
         name=""
         placeholder="name"
@@ -45,8 +42,7 @@ const Login = () => {
         onChange={(e) => {
           setAge(e.target.value);
         }}
-        minLength={6}
-        type="text"
+        type="number"
         name=""
         placeholder="age"
       />{" "}
