@@ -4,11 +4,12 @@ const initialState = {
   current: null,
 };
 
-
-const reducerState  = createSlice({
+const reducerState = createSlice({
   name: "user",
   initialState,
   reducers: {
-    
-  }
-})
+    logIn: (state, action) => {
+      state.current = action.payload;
+    },
+  },
+});
