@@ -1,7 +1,8 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const Profile = () => {
-  const userData = React.useSeletor((state) => state.myReducer.current);
+  const userData = useSelector((state) => state.myReducer.current);
 
   return (
     <div>
@@ -9,7 +10,7 @@ const Profile = () => {
       <div>userName: {userData?.name}</div>
       <div>email : {userData?.email}</div>
       <div>age: {userData?.age}</div>
-      <div>stack : {userData.stack}</div>
+      <div>stack : {userData?.stack}</div>
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import React from "react";
+import { useDispatch } from "react-redux";
 import { logInUser, logOutUser } from "../ReduxState/ReduxState";
 
 const Login = () => {
@@ -7,7 +8,7 @@ const Login = () => {
   const [stack, setStack] = React.useState("");
   const [email, setEmail] = React.useState("");
 
-  const dispatch = React.useDispatch(); // push data to the store
+  const dispatch = useDispatch(); // push data to the store
 
   return (
     <div>
