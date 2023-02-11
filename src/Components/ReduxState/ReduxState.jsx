@@ -11,5 +11,11 @@ const reducerState = createSlice({
     logIn: (state, action) => {
       state.current = action.payload;
     },
+    logOut: (state, action) => {
+      state.current = null;
+    },
   },
 });
+
+
+
