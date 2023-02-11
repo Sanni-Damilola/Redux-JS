@@ -1,5 +1,5 @@
 import React from "react";
-import { logInUser } from "../ReduxState/ReduxState";
+import { logInUser, logOutUser } from "../ReduxState/ReduxState";
 
 const Login = () => {
   const [name, setName] = React.useState("");
@@ -58,7 +58,14 @@ const Login = () => {
       >
         login
       </button>
-      <button style={{ margin: "10px", padding: "5px" }}>logout</button>
+      <button
+        onClick={() => {
+          dispatch(logOutUser()); // logOut
+        }} 
+        style={{ margin: "10px", padding: "5px" }}
+      >
+        logout
+      </button>
     </div>
   );
 };
