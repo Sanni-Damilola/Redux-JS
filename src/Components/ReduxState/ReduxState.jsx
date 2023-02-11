@@ -7,5 +7,6 @@ const initialSTate = {
 
 
 const reducerState = createSlice({
-  sta
+  name: "user",
+  initialState,
 })
