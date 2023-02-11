@@ -5,3 +5,6 @@ const initialState = {
 };
 
 
+const reducerState  = {
+  name: "user"
+}
