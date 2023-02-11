@@ -7,7 +7,7 @@ const Login = () => {
   const [stack, setStack] = React.useState("");
   const [email, setEmail] = React.useState("");
 
-  const dispatch = React.useDispatch();
+  const dispatch = React.useDispatch(); // push data to the store
 
   return (
     <div>
