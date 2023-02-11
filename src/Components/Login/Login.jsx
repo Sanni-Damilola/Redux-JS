@@ -7,7 +7,7 @@ const Login = () => {
   const [stack, setStack] = React.useState("");
   const [email, setEmail] = React.useState("");
 
-  const dispatch = React.useDispatch(); // pushing data to the store
+  const dispatch = React.useDispatch();
 
   return (
     <div>
@@ -46,13 +46,14 @@ const Login = () => {
       <button
         onClick={() => {
           dispatch(
+            // here❕❕ 👇❤✔😊🎈
             logInUser({
               name: name,
               email: email,
               stack: stack,
               age: age,
             })
-          );
+          ); // pushing data to the store
         }}
         style={{ margin: "10px", padding: "5px" }}
       >
@@ -61,7 +62,7 @@ const Login = () => {
       <button
         onClick={() => {
           dispatch(logOutUser()); // logOut
-        }} 
+        }}
         style={{ margin: "10px", padding: "5px" }}
       >
         logout
