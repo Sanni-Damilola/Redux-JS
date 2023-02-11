@@ -16,3 +16,7 @@ const ReducerState = createSlice({
     },
   },
 });
+
+export const { logIn, logOut } = ReducerState.actions;
+
+export default ReducerState.reducer;
