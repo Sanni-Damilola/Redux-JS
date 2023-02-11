@@ -5,6 +5,10 @@ const initialState = {
 };
 
 
-const reducerState  = {
-  name: "user"
-}
+const reducerState  = createSlice({
+  name: "user",
+  initialState,
+  reducers: {
+    
+  }
+})
