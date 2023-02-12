@@ -23,16 +23,23 @@
 // export default reducerState.reducer;  // export main reducer
 import { createSlice } from "@reduxjs/toolkit";
 
-
 const initialState = {
-  current : null
-}
-
+  current: null,
+};
 
 const reducerState = createSlice({
-  name : "user",
-  initialState, 
+  name: "user",
+  initialState,
   reducers: {
-    lo
-  }
-})
+    logInUser: (state, action) => {
+      state.current = action.payload;
+    },
+
+    logOutUser: (state, action) => {
+      state.current = null;
+    },
+  },
+});
+
+
+export const {} = reducerState.actions
