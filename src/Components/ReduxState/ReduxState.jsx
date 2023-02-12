@@ -21,26 +21,18 @@
 // export const { logInUser, logOutUser } = reducerState.actions; // export funtions
 
 // export default reducerState.reducer;  // export main reducer
-
 import { createSlice } from "@reduxjs/toolkit";
 
+
 const initialState = {
-  current: null,
-};
+  current : null
+}
+
 
 const reducerState = createSlice({
-  name: "users",
-  initialState,
+  name : "user",
+  initialState, 
   reducers: {
-    loginUser: (state, action) => {
-      state.current = action.payload;
-    },
-    logoutUser: (state, action) => {
-      state.current = null;
-    },
-  },
-});
-
-export const { logInUser, logOutUser } = reducerState.actions;
-
-export default reducerState.reducer;
+    lo
+  }
+})
