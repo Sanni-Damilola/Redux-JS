@@ -6,7 +6,6 @@
 //     myReducer,
 //   },
 // }); // storeing the reducer
-
 import { configureStore } from "@reduxjs/toolkit";
 import myReducer from "./ReduxState";
 
