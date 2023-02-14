@@ -16,7 +16,9 @@ const reducerState = createSlice({
     logOutUser: (state, action) => {
       state.current = null;
     }, // function to logout
-    
+    countFunction: (state) => {
+      state.count += 1;
+    },
   },
 }); // creating the reducer state
 
