@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   current: null,
+  count: 0,
 }; // createing an initiaState
 
 const reducerState = createSlice({
@@ -15,6 +16,7 @@ const reducerState = createSlice({
     logOutUser: (state, action) => {
       state.current = null;
     }, // function to logout
+    
   },
 }); // creating the reducer state
 
