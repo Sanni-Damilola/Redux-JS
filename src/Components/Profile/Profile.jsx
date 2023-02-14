@@ -7,6 +7,7 @@ const Profile = () => {
   return (
     <div>
       <h1>User</h1>
+      {/* <div>count: {userData?.count}</div> */}
       <div>userName: {userData?.name}</div>
       <div>email : {userData?.email}</div>
       <div>age: {userData?.age}</div>

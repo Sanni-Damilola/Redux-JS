@@ -22,6 +22,6 @@ const reducerState = createSlice({
   },
 }); // creating the reducer state
 
-export const { logInUser, logOutUser } = reducerState.actions; // export funtions
+export const { logInUser, logOutUser, countFunction } = reducerState.actions; // export funtions
 
 export default reducerState.reducer; // export main reducer

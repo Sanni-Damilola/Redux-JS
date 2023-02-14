@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { logInUser, logOutUser } from "../ReduxState/ReduxState";
+import { countFunction, logInUser, logOutUser } from "../ReduxState/ReduxState";
 
 const Login = () => {
   const [name, setName] = React.useState("");
@@ -44,6 +44,9 @@ const Login = () => {
         placeholder="age"
       />{" "}
       <br />
+      <div>
+        {}
+      </div>
       <button
         onClick={() => {
           dispatch(
@@ -53,7 +56,8 @@ const Login = () => {
               email: email,
               stack: stack,
               age: age,
-            })
+            }),
+            countFunction()
           ); // pushing data to the store
         }}
         style={{ margin: "10px", padding: "5px" }}
